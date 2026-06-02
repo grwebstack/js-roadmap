@@ -1,87 +1,133 @@
-# JS Blueprint
+# JS Roadmap
 
-Guia completo de referência, configuração e blueprints para desenvolvimento JavaScript moderno.
+Trilha de aprendizado JavaScript baseada em construção.
 
-Não é uma lista de tutoriais. É uma trilha de aprendizado baseada em construção — cada etapa conecta fundamentos técnicos a projetos funcionais, publicados e documentados.
-
----
-
-## Estrutura do repositório
-
-```
-js-blueprint/
-├── 00_intro/       ← Fundação teórica, roadmap e lógica interna do JS
-├── 01_config/      ← Configuração de ambiente: Git, VS Code e deploy
-├── 02_blueprint/   ← Blueprints de projetos prontos para seguir
-└── 03_resources/   ← PDFs, bookmarks, checklists e ferramentas de IA
-```
+Cada etapa conecta fundamentos técnicos a projetos reais — funcionando, publicados e documentados.
 
 ---
 
-## O que tem em cada pasta
+## Estrutura
+
+```
+js-roadmap/
+├── index.html       ← interface do roadmap interativo
+├── app.js           ← lógica: renderização, progresso, localStorage
+├── data.json        ← conteúdo: módulos e tópicos do roadmap
+├── README.md        ← você está aqui
+└── projects/        ← documentação, guias e recursos
+    ├── 00_intro/
+    ├── 01_config/
+    ├── 02_projects/
+    └── 03_resources/
+```
+
+---
+
+## Como usar o roadmap
+
+O roadmap roda no navegador. Não precisa instalar nada.
+
+**1. Clone o repositório**
+
+```bash
+git clone https://github.com/seuuser/js-roadmap.git
+cd js-roadmap
+```
+
+**2. Suba um servidor local**
+
+O navegador bloqueia `fetch()` em arquivos locais. Use um servidor simples:
+
+```bash
+# Node.js
+npx serve .
+
+# Python
+python -m http.server 8000
+```
+
+**3. Abra no navegador**
+
+```
+http://localhost:8000
+```
+
+**4. Marque os tópicos conforme avança**
+
+O progresso é salvo automaticamente no `localStorage` do navegador.
+
+---
+
+## Como funciona
+
+O roadmap tem três arquivos principais.
+
+**`data.json`**
+
+Toda a estrutura do roadmap fica aqui. Módulos, tópicos e níveis de dificuldade. Para adicionar ou remover conteúdo, edite apenas este arquivo.
+
+**`app.js`**
+
+Lê o `data.json`, renderiza os módulos na tela e gerencia o progresso. Cada tópico marcado é salvo no `localStorage`.
+
+**`index.html`**
+
+A interface visual. Usa Tailwind CSS via CDN. Sem build, sem dependências.
+
+---
+
+## Pasta projects/
+
+Documentação, guias e recursos organizados por etapa.
 
 ### `00_intro/`
 
-Fundação teórica e orientação geral. Comece aqui.
+Fundação teórica. Comece aqui antes de qualquer projeto.
 
 - Introdução ao JavaScript moderno
-- Lógica interna do JS: event loop, hoisting, closures
+- Lógica interna: event loop, hoisting, closures
 - Estruturas de dados: arrays, objetos, Maps, Sets
-- Roadmap visual de aprendizado e carreira
+- Roadmap de aprendizado e carreira
 
 ### `01_config/`
 
-Tudo para configurar seu ambiente de desenvolvimento do zero.
+Configuração de ambiente do zero.
 
-- Configuração do Git e GitHub
-- VS Code com extensões e settings recomendados
-- Deploy: Vercel, Netlify, GitHub Pages e Cloudflare Workers
+- Git e GitHub
+- VS Code: extensões e settings recomendados
+- Deploy: GitHub Pages, Vercel, Netlify, Cloudflare Workers
 
-### `02_blueprint/`
+### `02_projects/`
 
-Blueprints estruturados de projetos JavaScript — referência para construir do zero com clareza.
+Blueprints de projetos prontos para seguir.
 
-- `landing_page.md` — landing page responsiva com HTML, CSS e JS
+- `landing_page.md` — landing page com HTML, CSS e JS
 - `spa_router.md` — SPA com roteamento client-side vanilla
 - `api_project.md` — API REST com Node.js
 - `auth_system.md` — autenticação com JWT
-- `dashboard_project.md` — dashboard frontend com componentes reutilizáveis
-- `workers_kv.md` — edge functions e KV storage com Cloudflare Workers
+- `dashboard_project.md` — dashboard com componentes reutilizáveis
+- `workers_kv.md` — edge functions com Cloudflare Workers
 
 ### `03_resources/`
 
-Referências, materiais de apoio e ferramentas para o dia a dia.
+Referências e materiais de apoio.
 
-- PDFs de referência: algoritmos, estruturas de dados e engenharia web
-- Roadmap visual de carreira freelancer
-- Bookmarks curados de documentações e ferramentas
+- PDFs: algoritmos, estruturas de dados, engenharia web
+- Bookmarks de documentações e ferramentas
 - Checklist de projeto e boas práticas
-- Ferramentas e workflows de IA para acelerar o desenvolvimento
-
----
-
-## Como usar
-
-1. Comece por `00_intro/` para entender a fundação do JS
-2. Configure seu ambiente com `01_config/`
-3. Use `02_blueprint/` como referência ao estruturar seus projetos
-4. Consulte `03_resources/` para materiais de apoio e referência rápida
+- Ferramentas de IA para acelerar o desenvolvimento
 
 ---
 
 ## Trilha de aprendizado
 
-A diferença entre um desenvolvedor com portfólio e um sem portfólio não é o que foi estudado. É o que foi construído, documentado e publicado.
-
 ### Fase 1 — Ambiente e Ferramentas
 
-Antes de escrever código, o ambiente precisa estar configurado e o fluxo de trabalho precisa funcionar.
+Configure o ambiente antes de escrever código. Terminal, VS Code, Git e GitHub. Primeiro commit, primeiro deploy.
 
-Terminal, VS Code, Git e GitHub. Primeiro commit, primeiro deploy.
+**Projeto:** site pessoal publicado com GitHub Pages.
 
-Projeto: site pessoal publicado com GitHub Pages.
-
-Referência: `01_config/`
+Referência: `projects/01_config/`
 
 ---
 
@@ -89,15 +135,13 @@ Referência: `01_config/`
 
 HTML, CSS e JavaScript sem framework. A base que sustenta tudo.
 
-**HTML** — estrutura semântica, formulários, acessibilidade básica
+- **HTML** — estrutura semântica, formulários, acessibilidade
+- **CSS** — box model, Flexbox, Grid, responsividade, variáveis CSS
+- **JavaScript** — variáveis, funções, DOM, eventos, Fetch API, async/await, localStorage
 
-**CSS** — box model, Flexbox, Grid, design responsivo, variáveis CSS
+**Projetos:** landing page, calculadora, app de clima, busca de filmes.
 
-**JavaScript** — variáveis, funções, DOM, eventos, Fetch API, async/await, Local Storage
-
-Projetos: landing page, calculadora, app de clima, busca de filmes.
-
-Referência: `00_intro/` e `02_blueprint/landing_page.md`
+Referência: `projects/00_intro/` e `projects/02_projects/landing_page.md`
 
 ---
 
@@ -105,15 +149,13 @@ Referência: `00_intro/` e `02_blueprint/landing_page.md`
 
 Módulos ES, roteamento client-side e TypeScript.
 
-**Módulos ES** — import/export, arquitetura modular
+- **Módulos ES** — import/export, arquitetura modular
+- **SPA Router** — navegação sem reload, rotas dinâmicas
+- **TypeScript** — tipos, interfaces, generics
 
-**SPA Router** — navegação sem reload, rotas dinâmicas, carregamento de componentes
+**Projetos:** SPA com roteamento próprio, formulário tipado, dashboard com múltiplas rotas.
 
-**TypeScript** — tipos, interfaces, generics, integração com projetos existentes
-
-Projetos: SPA com roteamento próprio, formulário tipado com TypeScript, dashboard com múltiplas rotas.
-
-Referência: `02_blueprint/spa_router.md`
+Referência: `projects/02_projects/spa_router.md`
 
 ---
 
@@ -121,37 +163,29 @@ Referência: `02_blueprint/spa_router.md`
 
 APIs, servidores e persistência de dados.
 
-**Node.js** — runtime no servidor, módulos, variáveis de ambiente, scripts de automação
+- **Node.js** — runtime, módulos, variáveis de ambiente
+- **APIs REST** — rotas, controllers, middlewares, validação
+- **SQL** — SELECT, INSERT, UPDATE, DELETE, JOIN, SQLite e PostgreSQL
+- **Autenticação** — JWT, sessions, rotas protegidas
 
-**APIs REST** — rotas, controllers, middlewares, validação, tratamento de erros
+**Projetos:** CRUD com Node.js e SQLite, API com TypeScript, autenticação com JWT.
 
-**Banco de dados** — SQL: SELECT, INSERT, UPDATE, DELETE, JOIN, relacionamentos, SQLite e PostgreSQL
-
-**Autenticação** — JWT, sessions, rotas protegidas, cadastro e login
-
-Projetos: CRUD completo com Node.js e SQLite, API com TypeScript e ES Modules, sistema de autenticação com JWT.
-
-Referência: `02_blueprint/api_project.md` e `02_blueprint/auth_system.md`
+Referência: `projects/02_projects/api_project.md` e `projects/02_projects/auth_system.md`
 
 ---
 
 ### Fase 5 — Algoritmos e Estruturas de Dados
 
-Fundamentos de ciência da computação aplicados à resolução de problemas.
+Fundamentos de ciência da computação aplicados a problemas reais.
 
-**Estruturas de dados** — arrays, objetos, Maps, Sets, pilhas, filas, árvores básicas
+- **Estruturas** — arrays, objetos, Maps, Sets, pilhas, filas, árvores
+- **Algoritmos** — busca, ordenação, recursão, complexidade O(n)
 
-**Algoritmos** — busca linear e binária, ordenação, recursão, complexidade O(n), O(log n), O(n²)
-
-Recursos: CS50, MIT OpenCourseWare, JavaScript.info.
-
-Referência: `03_resources/`
+Referência: `projects/03_resources/`
 
 ---
 
-## Projetos de referência
-
-Projetos construídos ao longo desta trilha.
+## Projetos publicados
 
 | Projeto | Tecnologias | Status |
 |---|---|---|
@@ -203,25 +237,19 @@ Projetos construídos ao longo desta trilha.
 ## Recursos
 
 **Documentação oficial**
-- MDN Web Docs
-- JavaScript.info
-- Documentação TypeScript
-- Documentação Node.js
+- [MDN Web Docs](https://developer.mozilla.org)
+- [JavaScript.info](https://javascript.info)
+- [TypeScript Docs](https://www.typescriptlang.org/docs)
+- [Node.js Docs](https://nodejs.org/docs)
 
 **Ciência da Computação**
-- CS50 — Harvard
-- MIT OpenCourseWare
+- [CS50 — Harvard](https://cs50.harvard.edu)
+- [MIT OpenCourseWare](https://ocw.mit.edu)
 
 **Referências**
-- Roadmap.sh
-- GitHub Pages
-- Cloudflare Workers Docs
-
----
-
-## Licença
-
-Uso pessoal e comercial permitido. Redistribuição ou revenda não autorizada.
+- [Roadmap.sh](https://roadmap.sh)
+- [GitHub Pages](https://pages.github.com)
+- [Cloudflare Workers](https://developers.cloudflare.com/workers)
 
 ---
 
