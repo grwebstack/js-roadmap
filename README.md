@@ -4,6 +4,8 @@ Trilha de aprendizado JavaScript baseada em construção.
 
 Cada etapa conecta fundamentos técnicos a projetos reais — funcionando, publicados e documentados.
 
+🔗 **Demo:** [grwebstack.github.io/js-roadmap](https://grwebstack.github.io/js-roadmap/)
+
 ---
 
 ## Estrutura
@@ -23,38 +25,28 @@ js-roadmap/
 
 ---
 
-## Como usar o roadmap
+## Roadmap interativo
 
-O roadmap roda no navegador. Não precisa instalar nada.
+O roadmap está publicado e roda direto no navegador.
 
-**1. Clone o repositório**
+**Acesse:** [grwebstack.github.io/js-roadmap](https://grwebstack.github.io/js-roadmap/)
+
+Funcionalidades:
+
+- Checklist interativo por módulo
+- Barra de progresso global e por módulo
+- Progresso salvo automaticamente no `localStorage`
+- Indicador de dificuldade por tópico
+
+Para rodar localmente:
 
 ```bash
-git clone https://github.com/seuuser/js-roadmap.git
+git clone https://github.com/grwebstack/js-roadmap.git
 cd js-roadmap
-```
-
-**2. Suba um servidor local**
-
-O navegador bloqueia `fetch()` em arquivos locais. Use um servidor simples:
-
-```bash
-# Node.js
 npx serve .
-
-# Python
-python -m http.server 8000
 ```
 
-**3. Abra no navegador**
-
-```
-http://localhost:8000
-```
-
-**4. Marque os tópicos conforme avança**
-
-O progresso é salvo automaticamente no `localStorage` do navegador.
+> O navegador bloqueia `fetch()` em arquivos locais. O servidor local é necessário.
 
 ---
 
@@ -62,27 +54,20 @@ O progresso é salvo automaticamente no `localStorage` do navegador.
 
 O roadmap tem três arquivos principais.
 
-**`data.json`**
+**`data.json`** — toda a estrutura fica aqui: módulos, tópicos e dificuldades. Para adicionar conteúdo, edite apenas este arquivo.
 
-Toda a estrutura do roadmap fica aqui. Módulos, tópicos e níveis de dificuldade. Para adicionar ou remover conteúdo, edite apenas este arquivo.
+**`app.js`** — lê o `data.json`, renderiza os módulos e gerencia o progresso no `localStorage`.
 
-**`app.js`**
-
-Lê o `data.json`, renderiza os módulos na tela e gerencia o progresso. Cada tópico marcado é salvo no `localStorage`.
-
-**`index.html`**
-
-A interface visual. Usa Tailwind CSS via CDN. Sem build, sem dependências.
+**`index.html`** — interface visual com Tailwind CSS via CDN. Sem build, sem dependências.
 
 ---
 
 ## Pasta projects/
 
-Documentação, guias e recursos organizados por etapa.
+Documentação, guias e recursos organizados por etapa de aprendizado.
 
 ### `00_intro/`
-
-Fundação teórica. Comece aqui antes de qualquer projeto.
+Fundação teórica. Comece aqui.
 
 - Introdução ao JavaScript moderno
 - Lógica interna: event loop, hoisting, closures
@@ -90,7 +75,6 @@ Fundação teórica. Comece aqui antes de qualquer projeto.
 - Roadmap de aprendizado e carreira
 
 ### `01_config/`
-
 Configuração de ambiente do zero.
 
 - Git e GitHub
@@ -98,7 +82,6 @@ Configuração de ambiente do zero.
 - Deploy: GitHub Pages, Vercel, Netlify, Cloudflare Workers
 
 ### `02_projects/`
-
 Blueprints de projetos prontos para seguir.
 
 - `landing_page.md` — landing page com HTML, CSS e JS
@@ -109,7 +92,6 @@ Blueprints de projetos prontos para seguir.
 - `workers_kv.md` — edge functions com Cloudflare Workers
 
 ### `03_resources/`
-
 Referências e materiais de apoio.
 
 - PDFs: algoritmos, estruturas de dados, engenharia web
