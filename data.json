@@ -1,0 +1,67 @@
+{
+  "title": "JavaScript Roadmap",
+  "version": "1.0",
+  "modules": [
+    {
+      "id": "fundamentals",
+      "title": "Fundamentals",
+      "icon": "⚡",
+      "topics": [
+        { "id": "variables", "title": "Variables & Types", "difficulty": 1 },
+        { "id": "operators", "title": "Operators", "difficulty": 1 },
+        { "id": "conditionals", "title": "Conditionals", "difficulty": 1 },
+        { "id": "loops", "title": "Loops", "difficulty": 1 },
+        { "id": "functions", "title": "Functions", "difficulty": 2 },
+        { "id": "scope", "title": "Scope & Hoisting", "difficulty": 2 }
+      ]
+    },
+    {
+      "id": "data-structures",
+      "title": "Data Structures",
+      "icon": "🗂",
+      "topics": [
+        { "id": "arrays", "title": "Arrays", "difficulty": 1 },
+        { "id": "objects", "title": "Objects", "difficulty": 1 },
+        { "id": "maps", "title": "Maps & Sets", "difficulty": 2 },
+        { "id": "destructuring", "title": "Destructuring", "difficulty": 2 },
+        { "id": "spread", "title": "Spread & Rest", "difficulty": 2 }
+      ]
+    },
+    {
+      "id": "dom",
+      "title": "DOM",
+      "icon": "🌐",
+      "topics": [
+        { "id": "selectors", "title": "Selectors", "difficulty": 1 },
+        { "id": "events", "title": "Events", "difficulty": 2 },
+        { "id": "manipulation", "title": "DOM Manipulation", "difficulty": 2 },
+        { "id": "forms", "title": "Forms", "difficulty": 2 },
+        { "id": "storage", "title": "localStorage", "difficulty": 1 }
+      ]
+    },
+    {
+      "id": "async",
+      "title": "Async",
+      "icon": "⏳",
+      "topics": [
+        { "id": "callbacks", "title": "Callbacks", "difficulty": 2 },
+        { "id": "promises", "title": "Promises", "difficulty": 3 },
+        { "id": "async-await", "title": "Async / Await", "difficulty": 3 },
+        { "id": "fetch", "title": "Fetch API", "difficulty": 2 },
+        { "id": "error-handling", "title": "Error Handling", "difficulty": 2 }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced",
+      "icon": "🔥",
+      "topics": [
+        { "id": "closures", "title": "Closures", "difficulty": 3 },
+        { "id": "prototypes", "title": "Prototypes", "difficulty": 3 },
+        { "id": "classes", "title": "Classes", "difficulty": 2 },
+        { "id": "modules", "title": "Modules (ESM)", "difficulty": 2 },
+        { "id": "iterators", "title": "Iterators & Generators", "difficulty": 3 }
+      ]
+    }
+  ]
+}

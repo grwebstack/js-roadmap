@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>JS Roadmap</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;600;700&display=swap');
+
+          * {
+               box-sizing: border-box;
+          }
+
+          body {
+               font-family: 'Syne', sans-serif;
+               background-color: #09090b;
+          }
+
+          .font-mono {
+               font-family: 'IBM Plex Mono', monospace;
+          }
+
+          .module-card {
+               animation: fadeUp 0.4s ease both;
+          }
+
+          @keyframes fadeUp {
+               from {
+                    opacity: 0;
+                    transform: translateY(12px);
+               }
+
+               to {
+                    opacity: 1;
+                    transform: translateY(0);
+               }
+          }
+
+          .module-card:nth-child(1) {
+               animation-delay: 0.05s;
+          }
+
+          .module-card:nth-child(2) {
+               animation-delay: 0.10s;
+          }
+
+          .module-card:nth-child(3) {
+               animation-delay: 0.15s;
+          }
+
+          .module-card:nth-child(4) {
+               animation-delay: 0.20s;
+          }
+
+          .module-card:nth-child(5) {
+               animation-delay: 0.25s;
+          }
+
+          ::-webkit-scrollbar {
+               width: 4px;
+          }
+
+          ::-webkit-scrollbar-track {
+               background: #09090b;
+          }
+
+          ::-webkit-scrollbar-thumb {
+               background: #3f3f46;
+               border-radius: 4px;
+          }
+     </style>
+</head>
+
+<body class="min-h-screen text-white">
+
+     <div class="max-w-2xl mx-auto px-4 py-12 flex flex-col gap-10">
+
+          <!-- Header -->
+          <header class="flex flex-col gap-6">
+               <div class="flex items-start justify-between">
+                    <div>
+                         <p class="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-1">Learning Path</p>
+                         <h1 id="roadmap-title" class="text-3xl font-bold tracking-tight text-white"></h1>
+                    </div>
+                    <button onclick="resetProgress()"
+                         class="text-xs font-mono text-zinc-600 hover:text-red-400 transition-colors mt-1 cursor-pointer">
+                         reset
+                    </button>
+               </div>
+
+               <!-- Stats -->
+               <div class="flex items-center gap-6">
+                    <div class="flex flex-col">
+                         <span class="text-xs text-zinc-500 font-mono">completed</span>
+                         <span class="text-2xl font-bold text-white font-mono">
+                              <span id="stat-completed">0</span>
+                              <span class="text-zinc-600 text-lg">/<span id="stat-total">0</span></span>
+                         </span>
+                    </div>
+                    <div class="flex flex-col">
+                         <span class="text-xs text-zinc-500 font-mono">progress</span>
+                         <span id="stat-percent" class="text-2xl font-bold text-yellow-400 font-mono">0%</span>
+                    </div>
+               </div>
+
+               <!-- Global progress bar -->
+               <div class="w-full bg-zinc-800 rounded-full h-2 overflow-hidden">
+                    <div id="progress-bar" class="h-full rounded-full bg-yellow-400 transition-all duration-700"
+                         style="width: 0%"></div>
+               </div>
+          </header>
+
+          <!-- Modules -->
+          <main id="modules" class="flex flex-col gap-4"></main>
+
+          <!-- Footer -->
+          <footer class="text-center">
+               <p class="text-xs font-mono text-zinc-700">
+                    ● difficulty: <span class="text-zinc-500">easy</span> ●● <span class="text-zinc-500">medium</span>
+                    ●●● <span class="text-zinc-500">hard</span>
+               </p>
+          </footer>
+
+     </div>
+
+     <script src="app.js"></script>
+</body>
+
+</html>
