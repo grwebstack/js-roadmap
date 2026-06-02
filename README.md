@@ -1,303 +1,288 @@
 # JavaScript Roadmap
 
-Um roadmap prático focado no aprendizado de desenvolvimento web por meio de projetos, documentação e aplicações reais.
+Um guia prático de desenvolvimento web construído através de projetos reais, documentação técnica e aplicações publicadas.
 
-Este repositório organiza os principais tópicos, ferramentas e projetos necessários para construir uma base sólida em desenvolvimento JavaScript moderno.
-
----
-
-## Visão Geral
-
-O objetivo é simples:
-
-Aprender os fundamentos.
-
-Construir projetos.
-
-Publicar seu trabalho.
-
-Criar ativos reutilizáveis.
-
-Desenvolver experiência prática.
+Este repositório não é uma lista de tutoriais. É uma trilha de aprendizado baseada em construção — cada etapa leva a um projeto funcional, publicado e documentado.
 
 ---
 
-## Fundamentos da Web
+## Por que este roadmap existe
 
-Conceitos essenciais que todo desenvolvedor deve compreender antes de avançar para frameworks e ferramentas mais avançadas.
+A maioria dos roadmaps diz o que estudar. Este mostra como aplicar.
 
-### Fundamentos da Internet
+A diferença entre um desenvolvedor com portfólio e um desenvolvedor sem portfólio não é o que foi estudado. É o que foi construído, documentado e publicado.
 
-* HTTP e HTTPS
-* Domínios e DNS
-* Navegadores
-* Cliente e Servidor
-* Requisição e Resposta
-* JSON
-* APIs
-
-### Ambiente de Desenvolvimento
-
-* VS Code
-* Terminal
-* Sistema de Arquivos
-* Extensões
-* Ferramentas do Navegador
-
-### Controle de Versão
-
-* Git
-* GitHub
-* Repositórios
-* Branches
-* Commits
-* Pull Requests
-
-### Primeiro Deploy
-
-* GitHub Pages
-* Hospedagem Estática
-* Domínio Personalizado
+Cada seção aqui conecta fundamentos técnicos a projetos concretos.
 
 ---
 
-## Fundamentos de Programação
+## Fase 1 — Ambiente e Ferramentas
 
-### Lógica de Programação
+Antes de escrever código, o ambiente precisa estar configurado e o fluxo de trabalho precisa funcionar.
 
-* Variáveis
-* Tipos de Dados
-* Operadores
-* Condicionais
-* Laços de Repetição
-* Funções
+**Terminal**
+- Navegação no sistema de arquivos
+- Criação e remoção de arquivos e diretórios
+- Execução de scripts e processos
 
-### Algoritmos
+**VS Code**
+- Extensões essenciais
+- Atalhos de produtividade
+- Integração com terminal e Git
 
-* Resolução de Problemas
-* Arrays
-* Objetos
-* Busca
-* Ordenação
-* Noções de Complexidade
+**Git e GitHub**
+- Inicializar repositório
+- Commits, branches e merges
+- Push e pull
+- GitHub Pages para deploy estático
 
----
+**Primeiro deploy**
+- Publicar um projeto estático com GitHub Pages
+- Configurar domínio personalizado
 
-## Desenvolvimento Frontend
-
-### HTML
-
-* Elementos Semânticos
-* Formulários
-* Acessibilidade
-* Estrutura de Documento
-
-### CSS
-
-* Seletores
-* Layout
-* Flexbox
-* Grid
-* Design Responsivo
-* Animações
-
-### JavaScript
-
-* Manipulação do DOM
-* Eventos
-* Módulos
-* Fetch API
-* Local Storage
-* Programação Assíncrona
+Projeto desta fase: site pessoal publicado com GitHub Pages.
 
 ---
 
-## Projetos
+## Fase 2 — Fundamentos da Web
 
-O aprendizado deve ser orientado por projetos.
+HTML, CSS e JavaScript sem framework. A base que sustenta tudo.
 
-### Websites Básicos
+**HTML**
+- Estrutura semântica
+- Formulários e validação nativa
+- Acessibilidade básica
 
-* Site Pessoal
-* Portfólio
-* Landing Page
-* Página de Produto
+**CSS**
+- Box model
+- Flexbox e Grid
+- Design responsivo
+- Variáveis CSS e organização de estilos
 
-### Aplicações JavaScript
+**JavaScript**
+- Variáveis, tipos e operadores
+- Condicionais e laços
+- Funções e escopo
+- Arrays e objetos
+- Manipulação do DOM
+- Eventos
+- Fetch API e chamadas assíncronas
+- Local Storage
 
-* Calculadora
-* Aplicação de Clima
-* Bloco de Notas
-* Busca de Filmes
-* Dashboard
+Projetos desta fase:
 
-### Projetos SPA
-
-* SPA Router em JavaScript
-* Navegação Dinâmica
-* Gerenciamento de Rotas
-* Arquitetura Modular
-
-### Projetos com APIs
-
-* Consumo de APIs REST
-* Sistemas de Busca
-* Visualização de Dados
-* Integrações Externas
-
-### Sistemas de Autenticação
-
-* Login
-* Cadastro
-* Sessão de Usuário
-* Conceitos de JWT
-* Rotas Protegidas
-
-### Projetos com TypeScript
-
-* Tipos
-* Interfaces
-* Generics
-* Aplicações Modulares
-
-### Aplicações CRUD
-
-* Criar
-* Ler
-* Atualizar
-* Excluir
-* Validação
-* Integração com Banco de Dados
+- Landing page responsiva
+- Calculadora funcional
+- Aplicação de clima consumindo API externa
+- Busca de filmes com exibição de resultados
 
 ---
 
-## Fundamentos de Backend
+## Fase 3 — JavaScript Avançado
 
-### Node.js
+Módulos, roteamento e arquitetura de aplicações sem framework.
 
-* Runtime JavaScript
-* Módulos
-* Variáveis de Ambiente
+**Módulos ES**
+- Import e export
+- Organização de código em arquivos separados
+- Arquitetura modular
 
-### APIs
+**SPA Router**
+- Navegação sem recarregamento de página
+- Gerenciamento de rotas com JavaScript puro
+- Carregamento dinâmico de componentes
 
-* Rotas
-* Controllers
-* Middlewares
-* Validação
+**TypeScript**
+- Tipos básicos e inferência
+- Interfaces e tipos customizados
+- Generics
+- Integração com projetos existentes
 
-### Banco de Dados
+Projetos desta fase:
 
-* SQL
-* SQLite
-* PostgreSQL
-* Queries
-* Relacionamentos
-* Operações JOIN
+- SPA com roteamento próprio em JavaScript
+- Formulário de entrevista com TypeScript e tipagem completa
+- Dashboard com múltiplas rotas e dados dinâmicos
+
+---
+
+## Fase 4 — Backend e Banco de Dados
+
+APIs, servidores e persistência de dados.
+
+**Node.js**
+- Runtime JavaScript no servidor
+- Sistema de módulos
+- Variáveis de ambiente com dotenv
+- Scripts de automação
+
+**APIs REST**
+- Rotas e controllers
+- Middlewares
+- Validação de dados
+- Tratamento de erros
+
+**Banco de Dados**
+- SQL: SELECT, INSERT, UPDATE, DELETE
+- Relacionamentos e chaves estrangeiras
+- JOIN entre tabelas
+- SQLite para projetos locais
+- PostgreSQL para produção
+
+**Autenticação**
+- Sessions e cookies
+- JWT: geração, validação e refresh
+- Rotas protegidas
+- Cadastro e login
+
+Projetos desta fase:
+
+- Backend CRUD completo com Node.js, Express e SQLite
+- API de busca de filmes com TypeScript e ES Modules
+- Sistema de autenticação com JWT e rotas protegidas
+
+---
+
+## Fase 5 — Algoritmos e Estruturas de Dados
+
+Fundamentos de ciência da computação aplicados à resolução de problemas.
+
+**Estruturas de Dados**
+- Arrays e strings
+- Objetos e mapas
+- Pilhas e filas
+- Listas encadeadas
+- Árvores básicas
+
+**Algoritmos**
+- Busca linear e binária
+- Ordenação: bubble, selection, merge
+- Recursão
+- Complexidade de tempo e espaço: O(n), O(log n), O(n²)
+
+**Resolução de Problemas**
+- Decomposição de problemas
+- Identificação de padrões
+- Prática com exercícios reais
+
+Recursos: CS50, MIT OpenCourseWare, JavaScript.info, LeetCode.
+
+---
+
+## Projetos de Referência
+
+Projetos construídos durante o processo de aprendizado deste roadmap.
+
+| Projeto | Tecnologias | Status |
+|---|---|---|
+| Lab — SPA pessoal | HTML, CSS, JS, Marked.js | Publicado |
+| SQLite Backend | Node.js, Express, SQLite | Publicado |
+| Movies API | TypeScript, ES Modules | Publicado |
+| Image Converter | JavaScript, Canvas API | Publicado |
+| Weather CLI | Python, Open-Meteo API | Publicado |
+| Excel Report Bot | Python, automação de dados | Publicado |
+| React Demo | React, TypeScript | Publicado |
+| Tesseract | JavaScript, Three.js | Publicado |
 
 ---
 
 ## Documentação
 
-Todo projeto deve incluir:
+Todo projeto deve incluir um README com:
 
-* Descrição do Projeto
-* Funcionalidades
-* Instalação
-* Utilização
-* Capturas de Tela
-* Tecnologias Utilizadas
-* Instruções de Deploy
+- Descrição objetiva do que o projeto faz
+- Tecnologias utilizadas
+- Instruções de instalação e execução
+- Exemplos de uso ou capturas de tela
+- Link para demo publicada
+
+Documentação é parte do projeto, não etapa opcional.
 
 ---
 
 ## Portfólio
 
-Construa um portfólio público contendo:
+O portfólio não é um site com uma lista de cursos concluídos. É uma coleção de projetos publicados que demonstram capacidade técnica real.
 
-* Projetos no GitHub
-* Documentação
-* Demonstrações Online
-* Experimentos Técnicos
+Cada projeto no portfólio deve responder três perguntas:
 
-O portfólio deve demonstrar habilidades práticas, não apenas cursos concluídos.
+- O que este projeto resolve?
+- Como foi construído?
+- Posso ver funcionando?
 
 ---
 
 ## Recursos
 
-### Documentação
+**Documentação oficial**
+- MDN Web Docs
+- JavaScript.info
+- Documentação TypeScript
+- Documentação Node.js
+- Documentação Git
 
-* MDN Web Docs
-* JavaScript.info
-* Documentação TypeScript
-* Documentação Node.js
-* Documentação Git
+**Ciência da Computação**
+- CS50 — Harvard
+- MIT OpenCourseWare
 
-### Plataformas
-
-* GitHub
-* GitHub Pages
-* Roadmap.sh
-
-### Ciência da Computação
-
-* CS50
-* MIT OpenCourseWare
+**Referências**
+- GitHub
+- GitHub Pages
+- Roadmap.sh
 
 ---
 
 ## Checklist
 
-### Fundamentos
+### Ambiente
+- [ ] Terminal configurado
+- [ ] VS Code instalado com extensões
+- [ ] Git configurado localmente
+- [ ] Conta no GitHub ativa
+- [ ] Primeiro repositório criado
 
-* HTML
-* CSS
-* JavaScript
-* Git
-* GitHub
-* VS Code
-* Terminal
+### Frontend
+- [ ] HTML semântico
+- [ ] CSS responsivo com Flexbox e Grid
+- [ ] JavaScript: DOM, eventos, fetch, async
+- [ ] Projeto publicado com GitHub Pages
 
-### Projetos
-
-* Landing Page
-* Portfólio
-* Aplicação JavaScript
-* Projeto com API
-* Sistema CRUD
-* Sistema de Autenticação
-
-### Deploy
-
-* GitHub Pages
-* Hospedagem Estática
-* Domínio Personalizado
+### JavaScript Avançado
+- [ ] Módulos ES
+- [ ] SPA com roteamento próprio
+- [ ] TypeScript básico
 
 ### Backend
+- [ ] Node.js e Express
+- [ ] API REST com rotas e controllers
+- [ ] SQL e banco de dados relacional
+- [ ] CRUD completo com validação
+- [ ] Autenticação com JWT
 
-* Node.js
-* SQL
-* APIs
-* Autenticação
-
-### Desenvolvimento Profissional
-
-* Documentação
-* Portfólio
-* Repositórios Públicos
-* Escrita Técnica
+### Portfólio
+- [ ] GitHub com projetos documentados
+- [ ] Pelo menos 3 projetos com README completo
+- [ ] Pelo menos 1 projeto com demo online
+- [ ] GitHub Profile configurado
 
 ---
 
-## Estrutura do Repositório
+## Estrutura do repositório
 
-Este roadmap foi criado para evoluir através de projetos práticos, boilerplates reutilizáveis, documentação e aprendizado contínuo.
+```
+js-roadmap/
+  README.md
+  projetos/
+    landing-page/
+    spa-router/
+    movies-api/
+    sqlite-backend/
+    auth-system/
+  recursos/
+    links.md
+    livros.md
+```
 
-Aprenda os fundamentos.
+---
 
-Construa projetos.
-
-Documente tudo.
-
-Publique seu trabalho.
+Aprenda construindo. Publique desde o início. Documente tudo.
