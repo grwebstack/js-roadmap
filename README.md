@@ -1,177 +1,157 @@
-# JavaScript Roadmap
+# JS Blueprint
 
-Um guia prático de desenvolvimento web construído através de projetos reais, documentação técnica e aplicações publicadas.
+Guia completo de referência, configuração e blueprints para desenvolvimento JavaScript moderno.
 
-Este repositório não é uma lista de tutoriais. É uma trilha de aprendizado baseada em construção — cada etapa leva a um projeto funcional, publicado e documentado.
-
----
-
-## Por que este roadmap existe
-
-A maioria dos roadmaps diz o que estudar. Este mostra como aplicar.
-
-A diferença entre um desenvolvedor com portfólio e um desenvolvedor sem portfólio não é o que foi estudado. É o que foi construído, documentado e publicado.
-
-Cada seção aqui conecta fundamentos técnicos a projetos concretos.
+Não é uma lista de tutoriais. É uma trilha de aprendizado baseada em construção — cada etapa conecta fundamentos técnicos a projetos funcionais, publicados e documentados.
 
 ---
 
-## Fase 1 — Ambiente e Ferramentas
+## Estrutura do repositório
+
+```
+js-blueprint/
+├── 00_intro/       ← Fundação teórica, roadmap e lógica interna do JS
+├── 01_config/      ← Configuração de ambiente: Git, VS Code e deploy
+├── 02_blueprint/   ← Blueprints de projetos prontos para seguir
+└── 03_resources/   ← PDFs, bookmarks, checklists e ferramentas de IA
+```
+
+---
+
+## O que tem em cada pasta
+
+### `00_intro/`
+
+Fundação teórica e orientação geral. Comece aqui.
+
+- Introdução ao JavaScript moderno
+- Lógica interna do JS: event loop, hoisting, closures
+- Estruturas de dados: arrays, objetos, Maps, Sets
+- Roadmap visual de aprendizado e carreira
+
+### `01_config/`
+
+Tudo para configurar seu ambiente de desenvolvimento do zero.
+
+- Configuração do Git e GitHub
+- VS Code com extensões e settings recomendados
+- Deploy: Vercel, Netlify, GitHub Pages e Cloudflare Workers
+
+### `02_blueprint/`
+
+Blueprints estruturados de projetos JavaScript — referência para construir do zero com clareza.
+
+- `landing_page.md` — landing page responsiva com HTML, CSS e JS
+- `spa_router.md` — SPA com roteamento client-side vanilla
+- `api_project.md` — API REST com Node.js
+- `auth_system.md` — autenticação com JWT
+- `dashboard_project.md` — dashboard frontend com componentes reutilizáveis
+- `workers_kv.md` — edge functions e KV storage com Cloudflare Workers
+
+### `03_resources/`
+
+Referências, materiais de apoio e ferramentas para o dia a dia.
+
+- PDFs de referência: algoritmos, estruturas de dados e engenharia web
+- Roadmap visual de carreira freelancer
+- Bookmarks curados de documentações e ferramentas
+- Checklist de projeto e boas práticas
+- Ferramentas e workflows de IA para acelerar o desenvolvimento
+
+---
+
+## Como usar
+
+1. Comece por `00_intro/` para entender a fundação do JS
+2. Configure seu ambiente com `01_config/`
+3. Use `02_blueprint/` como referência ao estruturar seus projetos
+4. Consulte `03_resources/` para materiais de apoio e referência rápida
+
+---
+
+## Trilha de aprendizado
+
+A diferença entre um desenvolvedor com portfólio e um sem portfólio não é o que foi estudado. É o que foi construído, documentado e publicado.
+
+### Fase 1 — Ambiente e Ferramentas
 
 Antes de escrever código, o ambiente precisa estar configurado e o fluxo de trabalho precisa funcionar.
 
-**Terminal**
-- Navegação no sistema de arquivos
-- Criação e remoção de arquivos e diretórios
-- Execução de scripts e processos
+Terminal, VS Code, Git e GitHub. Primeiro commit, primeiro deploy.
 
-**VS Code**
-- Extensões essenciais
-- Atalhos de produtividade
-- Integração com terminal e Git
+Projeto: site pessoal publicado com GitHub Pages.
 
-**Git e GitHub**
-- Inicializar repositório
-- Commits, branches e merges
-- Push e pull
-- GitHub Pages para deploy estático
-
-**Primeiro deploy**
-- Publicar um projeto estático com GitHub Pages
-- Configurar domínio personalizado
-
-Projeto desta fase: site pessoal publicado com GitHub Pages.
+Referência: `01_config/`
 
 ---
 
-## Fase 2 — Fundamentos da Web
+### Fase 2 — Fundamentos da Web
 
 HTML, CSS e JavaScript sem framework. A base que sustenta tudo.
 
-**HTML**
-- Estrutura semântica
-- Formulários e validação nativa
-- Acessibilidade básica
+**HTML** — estrutura semântica, formulários, acessibilidade básica
 
-**CSS**
-- Box model
-- Flexbox e Grid
-- Design responsivo
-- Variáveis CSS e organização de estilos
+**CSS** — box model, Flexbox, Grid, design responsivo, variáveis CSS
 
-**JavaScript**
-- Variáveis, tipos e operadores
-- Condicionais e laços
-- Funções e escopo
-- Arrays e objetos
-- Manipulação do DOM
-- Eventos
-- Fetch API e chamadas assíncronas
-- Local Storage
+**JavaScript** — variáveis, funções, DOM, eventos, Fetch API, async/await, Local Storage
 
-Projetos desta fase:
+Projetos: landing page, calculadora, app de clima, busca de filmes.
 
-- Landing page responsiva
-- Calculadora funcional
-- Aplicação de clima consumindo API externa
-- Busca de filmes com exibição de resultados
+Referência: `00_intro/` e `02_blueprint/landing_page.md`
 
 ---
 
-## Fase 3 — JavaScript Avançado
+### Fase 3 — JavaScript Avançado
 
-Módulos, roteamento e arquitetura de aplicações sem framework.
+Módulos ES, roteamento client-side e TypeScript.
 
-**Módulos ES**
-- Import e export
-- Organização de código em arquivos separados
-- Arquitetura modular
+**Módulos ES** — import/export, arquitetura modular
 
-**SPA Router**
-- Navegação sem recarregamento de página
-- Gerenciamento de rotas com JavaScript puro
-- Carregamento dinâmico de componentes
+**SPA Router** — navegação sem reload, rotas dinâmicas, carregamento de componentes
 
-**TypeScript**
-- Tipos básicos e inferência
-- Interfaces e tipos customizados
-- Generics
-- Integração com projetos existentes
+**TypeScript** — tipos, interfaces, generics, integração com projetos existentes
 
-Projetos desta fase:
+Projetos: SPA com roteamento próprio, formulário tipado com TypeScript, dashboard com múltiplas rotas.
 
-- SPA com roteamento próprio em JavaScript
-- Formulário de entrevista com TypeScript e tipagem completa
-- Dashboard com múltiplas rotas e dados dinâmicos
+Referência: `02_blueprint/spa_router.md`
 
 ---
 
-## Fase 4 — Backend e Banco de Dados
+### Fase 4 — Backend e Banco de Dados
 
 APIs, servidores e persistência de dados.
 
-**Node.js**
-- Runtime JavaScript no servidor
-- Sistema de módulos
-- Variáveis de ambiente com dotenv
-- Scripts de automação
+**Node.js** — runtime no servidor, módulos, variáveis de ambiente, scripts de automação
 
-**APIs REST**
-- Rotas e controllers
-- Middlewares
-- Validação de dados
-- Tratamento de erros
+**APIs REST** — rotas, controllers, middlewares, validação, tratamento de erros
 
-**Banco de Dados**
-- SQL: SELECT, INSERT, UPDATE, DELETE
-- Relacionamentos e chaves estrangeiras
-- JOIN entre tabelas
-- SQLite para projetos locais
-- PostgreSQL para produção
+**Banco de dados** — SQL: SELECT, INSERT, UPDATE, DELETE, JOIN, relacionamentos, SQLite e PostgreSQL
 
-**Autenticação**
-- Sessions e cookies
-- JWT: geração, validação e refresh
-- Rotas protegidas
-- Cadastro e login
+**Autenticação** — JWT, sessions, rotas protegidas, cadastro e login
 
-Projetos desta fase:
+Projetos: CRUD completo com Node.js e SQLite, API com TypeScript e ES Modules, sistema de autenticação com JWT.
 
-- Backend CRUD completo com Node.js, Express e SQLite
-- API de busca de filmes com TypeScript e ES Modules
-- Sistema de autenticação com JWT e rotas protegidas
+Referência: `02_blueprint/api_project.md` e `02_blueprint/auth_system.md`
 
 ---
 
-## Fase 5 — Algoritmos e Estruturas de Dados
+### Fase 5 — Algoritmos e Estruturas de Dados
 
 Fundamentos de ciência da computação aplicados à resolução de problemas.
 
-**Estruturas de Dados**
-- Arrays e strings
-- Objetos e mapas
-- Pilhas e filas
-- Listas encadeadas
-- Árvores básicas
+**Estruturas de dados** — arrays, objetos, Maps, Sets, pilhas, filas, árvores básicas
 
-**Algoritmos**
-- Busca linear e binária
-- Ordenação: bubble, selection, merge
-- Recursão
-- Complexidade de tempo e espaço: O(n), O(log n), O(n²)
+**Algoritmos** — busca linear e binária, ordenação, recursão, complexidade O(n), O(log n), O(n²)
 
-**Resolução de Problemas**
-- Decomposição de problemas
-- Identificação de padrões
-- Prática com exercícios reais
+Recursos: CS50, MIT OpenCourseWare, JavaScript.info.
 
-Recursos: CS50, MIT OpenCourseWare, JavaScript.info, LeetCode.
+Referência: `03_resources/`
 
 ---
 
-## Projetos de Referência
+## Projetos de referência
 
-Projetos construídos durante o processo de aprendizado deste roadmap.
+Projetos construídos ao longo desta trilha.
 
 | Projeto | Tecnologias | Status |
 |---|---|---|
@@ -186,60 +166,14 @@ Projetos construídos durante o processo de aprendizado deste roadmap.
 
 ---
 
-## Documentação
-
-Todo projeto deve incluir um README com:
-
-- Descrição objetiva do que o projeto faz
-- Tecnologias utilizadas
-- Instruções de instalação e execução
-- Exemplos de uso ou capturas de tela
-- Link para demo publicada
-
-Documentação é parte do projeto, não etapa opcional.
-
----
-
-## Portfólio
-
-O portfólio não é um site com uma lista de cursos concluídos. É uma coleção de projetos publicados que demonstram capacidade técnica real.
-
-Cada projeto no portfólio deve responder três perguntas:
-
-- O que este projeto resolve?
-- Como foi construído?
-- Posso ver funcionando?
-
----
-
-## Recursos
-
-**Documentação oficial**
-- MDN Web Docs
-- JavaScript.info
-- Documentação TypeScript
-- Documentação Node.js
-- Documentação Git
-
-**Ciência da Computação**
-- CS50 — Harvard
-- MIT OpenCourseWare
-
-**Referências**
-- GitHub
-- GitHub Pages
-- Roadmap.sh
-
----
-
 ## Checklist
 
 ### Ambiente
 - [ ] Terminal configurado
-- [ ] VS Code instalado com extensões
+- [ ] VS Code com extensões
 - [ ] Git configurado localmente
 - [ ] Conta no GitHub ativa
-- [ ] Primeiro repositório criado
+- [ ] Primeiro repositório criado e publicado
 
 ### Frontend
 - [ ] HTML semântico
@@ -260,28 +194,34 @@ Cada projeto no portfólio deve responder três perguntas:
 - [ ] Autenticação com JWT
 
 ### Portfólio
-- [ ] GitHub com projetos documentados
 - [ ] Pelo menos 3 projetos com README completo
 - [ ] Pelo menos 1 projeto com demo online
 - [ ] GitHub Profile configurado
 
 ---
 
-## Estrutura do repositório
+## Recursos
 
-```
-js-roadmap/
-  README.md
-  projetos/
-    landing-page/
-    spa-router/
-    movies-api/
-    sqlite-backend/
-    auth-system/
-  recursos/
-    links.md
-    livros.md
-```
+**Documentação oficial**
+- MDN Web Docs
+- JavaScript.info
+- Documentação TypeScript
+- Documentação Node.js
+
+**Ciência da Computação**
+- CS50 — Harvard
+- MIT OpenCourseWare
+
+**Referências**
+- Roadmap.sh
+- GitHub Pages
+- Cloudflare Workers Docs
+
+---
+
+## Licença
+
+Uso pessoal e comercial permitido. Redistribuição ou revenda não autorizada.
 
 ---
 
