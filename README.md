@@ -4,7 +4,7 @@ Trilha de aprendizado JavaScript baseada em construção.
 
 Cada etapa conecta fundamentos técnicos a projetos reais — funcionando, publicados e documentados.
 
-🔗 **Demo:** [grwebstack.github.io/js-roadmap](https://grwebstack.github.io/js-roadmap/)
+🔗 **Demo:** [grwebstack.github.io/js-roadmap](https://liberstack.github.io/js-roadmap/)
 
 ---
 
@@ -29,7 +29,7 @@ js-roadmap/
 
 O roadmap está publicado e roda direto no navegador.
 
-**Acesse:** [grwebstack.github.io/js-roadmap](https://grwebstack.github.io/js-roadmap/)
+**Acesse:** [grwebstack.github.io/js-roadmap](https://liberstack.github.io/js-roadmap/)
 
 Funcionalidades:
 
